@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
+//Pages
 import { HomeComponent } from './home/home.component';
 
 // this constant default routes to Home, and also send all unknown path to Home
