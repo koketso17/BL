@@ -1,24 +1,30 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        (click)="basicNav.toggle()"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="centered.toggle()"
+      aria-controls="navbarCenteredExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <a class="navbar-brand navbar-toggler" style="color: #f2882f; font-size: 20px; font-weight: 400; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">B.L MAKGALE &nbsp; <span style="color: #44443c; font-size: 15px;">Constructions & Projects</span></a>
+    
     <!-- Collapsible wrapper -->
     <div
-      class="collapse navbar-collapse"
-      id="navbarRightAlignExample"
+      class="collapse navbar-collapse justify-content-center"
+      id="navbarCenteredExample"
       mdbCollapse
-      #basicNav="mdbCollapse"
+      #centered="mdbCollapse"
     >
+
       <!-- Left links -->
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
@@ -34,5 +40,6 @@
       <!-- Left links -->
     </div>
     <!-- Collapsible wrapper -->
-    </div>
-  </nav>
+  </div>
+  <!-- Container wrapper -->
+</nav>
