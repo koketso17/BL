@@ -1,20 +1,15 @@
       /* Default height for small devices */
       #intro-example {
-          background-image: url('../../assets/images/img-1.jpg');
-          height: 60vh;
-
+        height: 100vh;
+        background-image: url('../../assets/images/jumbo-2\ \(2\).jpg');
       }
 
       /* Height for devices larger than 992px */
       @media (min-width: 992px) {
-          #intro-example {
-              background-image: url('../../assets/images/img-1.jpg');
-              height: 50vh;
-          }
-
-          #intro-text{
-            font-size: 60px;
-          }
+        #intro-example {
+          height: 90vh;
+          background-image: url('../../assets/images/jumbo-1.jpg');
+        }
       }
 
       section{
