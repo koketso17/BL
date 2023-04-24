@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {AppRoutingModule} from './app-routing.module'
-import { TypingAnimatorModule } from 'angular-typing-animator'
 
 // MDB Modules
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
@@ -55,7 +54,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MdbTooltipModule,
     MdbValidationModule,
     AppRoutingModule,
-    TypingAnimatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
