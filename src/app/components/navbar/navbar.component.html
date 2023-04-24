@@ -1,40 +1,81 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+<div class="header-top bg-light ">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-6 col-lg-3">
+        <a>
+          <img src="../../../assets/images/logo-2.png" alt="Image" class="img-fluid">
+
+        </a>
+      </div>
+      <div class="col-lg-3 d-none d-lg-block">
+        <div class="quick-contact-icons d-flex">
+          <div class="icon align-self-start">
+            <span class="flaticon-placeholder text-primary"></span>
+          </div>
+          <div class="text">
+            <span class="h4 d-block">Rustenburg</span>
+            <span class="caption-text">20205 Matumeng Sec, 0337</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 d-none d-lg-block">
+        <div class="quick-contact-icons d-flex">
+          <div class="icon align-self-start">
+            <i class="fas fa-phone-alt fa-lg"></i>
+          </div>
+          <div class="text">
+            <span class="h4 d-block">063 719 6928</span>
+            <span class="caption-text">Call</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 d-none d-lg-block">
+        <div class="quick-contact-icons d-flex">
+          <div class="icon align-self-start">
+            <span class="flaticon-email text-primary"></span>
+          </div>
+          <div class="text">
+            <span class="h4 d-block">blmconandproj@gmail.com</span>
+            <span class="caption-text">Email</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color:#f2882f;">
+
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Toggle button -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      (click)="centered.toggle()"
-      aria-controls="navbarCenteredExample"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" (click)="centered.toggle()" aria-controls="navbarCenteredExample"
+      aria-expanded="false" aria-label="Toggle navigation">
 
       <i class="fas fa-bars"></i>
     </button>
 
-    <a class="navbar-brand navbar-toggler" style="color: #f2882f; font-size: 22px; font-weight: 600; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">B.L MAKGALE &nbsp; <span style="color: #44443c; font-size: 15px;">Constructions & Projects</span></a>
-    
+    <a class="navbar-brand navbar-toggler"
+      style="color: #f2882f; font-size: 22px; font-weight: 600; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">B.L
+      MAKGALE &nbsp; <span style="color: #44443c; font-size: 15px;">Constructions & Projects</span></a>
+
     <!-- Collapsible wrapper -->
-    <div
-      class="collapse navbar-collapse justify-content-center"
-      id="navbarCenteredExample"
-      mdbCollapse
-      #centered="mdbCollapse"
-    >
+    <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample" mdbCollapse
+      #centered="mdbCollapse">
 
       <!-- Left links -->
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-            >Disabled</a
-          >
+          <a class="nav-link " href="#" tabindex="-1">SERVICE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1">CONTACT</a>
         </li>
       </ul>
       <!-- Left links -->
@@ -43,3 +84,4 @@
   </div>
   <!-- Container wrapper -->
 </nav>
+

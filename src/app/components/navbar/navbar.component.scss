@@ -1,0 +1,22 @@
+      /* Default height for small devices */
+      #logo-example {
+          height: 400px;
+      }
+
+      /* Height for devices larger than 992px */
+      @media (min-width: 992px) {
+          #logo-example {
+              background-image: url('../../../assets/images/logo-2.png');
+          }
+      }
+
+      img-fluid{
+        background-image: url('../../../assets/images/logo.png');
+      }
+
+    
+      @media (min-width: 600px) {
+        .test {
+           color: crimson;
+        }
+    }
