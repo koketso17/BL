@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  start: boolean = false
+
+  ngOnInit () {
+    // Start after 1 second + 1 second of startDelay
+    setTimeout(() => this.start = true, 1000)
+  }
+
+  onTypingAnimationComplete () {
+    console.log('#TYPING ANIMATION COMPLETE')
+    // ...
+  }
+
 }

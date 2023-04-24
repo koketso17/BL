@@ -1,17 +1,68 @@
       /* Default height for small devices */
       #intro-example {
-        height: 100vh;
-        background-image: url('../../assets/images/jumbo-2\ \(2\).jpg');
+          height: 100vh;
+          background-image: url('../../assets/images/jumbo-2\ \(2\).jpg');
       }
 
       /* Height for devices larger than 992px */
       @media (min-width: 992px) {
-        #intro-example {
-          height: 90vh;
-          background-image: url('../../assets/images/jumbo-1.jpg');
-        }
+          #intro-example {
+              height: 90vh;
+              background-image: url('../../assets/images/jumbo-1.jpg');
+          }
       }
 
-      section{
-        height: 100vh;
-    }
+      section {
+          height: 100vh;
+      }
+
+      .section-title h2 {
+          font-family: "Raleway", sans-serif;
+          color: #fe7709;
+          font-size: 40px;
+          display: block;
+          font-weight: 700;
+          line-height: 1.2;
+          margin-bottom: 7px;
+      }
+
+      .support-caption {
+          font-family: "Raleway", sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          color: #1A1A1A;
+          line-height: 1.8
+      }
+
+      @media only screen and (min-width: 320px) and (max-width: 767px) {
+          .section-padding40 {
+              background-color: aqua;
+              padding-top: 65px;
+              padding-bottom: 60px;
+          }
+
+          .section-title h2 {
+              font-family: "Raleway", sans-serif;
+              color: #fe7709;
+              font-size: 40px;
+              display: block;
+              font-weight: 700;
+              line-height: 1.2;
+              margin-bottom: 7px;
+              padding-top: 30px;
+              padding-bottom: 30px;
+          }
+
+          .support-caption {
+              font-family: "Raleway", sans-serif;
+              font-size: 18px;
+              font-weight: 400;
+              color: #1A1A1A;
+              line-height: 1.8
+          }
+
+      }
+
+      .support-location-img {
+          width: 100%;
+      }
