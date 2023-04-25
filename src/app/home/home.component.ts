@@ -8,6 +8,30 @@ import Typewriter from 't-writer.js'
 })
 export class HomeComponent {
 
-  
+  constructor() { }
+
+  ngOnInit(): void {
+
+    const target = document.querySelector('.tw')
+
+    const writer = new Typewriter(target, {
+      loop: true,
+      typeColor: 'white',
+      cursorColor: 'white',
+      typeSpeed: 100,
+      deleteSpeed: 80,
+
+    })
+
+    writer
+      .strings(
+        400,
+        "WE BUILD YOUR DREAM HOUSE...",
+        "THE PERFECT HOME TO START A FAMILY.",
+      )
+      .start()
+  }
+
+
 
 }
