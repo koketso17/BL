@@ -34,6 +34,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     AppComponent,
     HomeComponent,
     NavbarComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -54,6 +56,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MdbTooltipModule,
     MdbValidationModule,
     AppRoutingModule,
+    
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
