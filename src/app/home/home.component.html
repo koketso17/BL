@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
 
-<section id="home">
+<section id="home" class="mb-5 mt-5">
 
   <header>
     <!-- Intro settings -->
@@ -13,7 +13,8 @@
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
         <div class="d-flex justify-content-center align-items-center h-100">
           <div class="text-white">
-            <span typingAnimator [sentences]="['This is my sentence', 'Here is another sentence']">
+            <span class="intro-type-animation" typingAnimator [typeSpeed]="100" [deleteSpeed]="70"
+              [sentences]="['WE BUILD YOUR DREAM HOUSE...', 'THE PERFECT HOME TO START A FAMILY.']">
             </span>
             <br>
             <br>
@@ -27,37 +28,81 @@
     <!-- Background image -->
   </header>
 
-</section>
+  <br>
+  <br>
 
-<section id="about">
-  <div class="support-company-area section-padding40">
-    <div class="container">
-      <div class="row align-items-end justify-content-between">
-        <div class="col-xl-7 col-lg-7 col-md-10">
-          <div>
-            <img class="support-location" src="../../assets/images/about.png.webp" alt="">
-          </div>
-        </div>
-
-        <div class="col-xl-4 col-lg-6 col-md-10">
-          <div class="right-caption">
-            <div class="section-title mb-30">
-              <h2>THE PERFECT HOME TO START A FAMILY</h2>
+  <div class="container">
+    <div class="support-company-area section-padding40">
+      <div class="container">
+        <div class="row align-items-end justify-content-between">
+          <div class="col-xl-7 col-lg-7 col-md-10">
+            <div>
+              <img class="support-location" src="../../assets/images/about.png.webp" alt="">
             </div>
-            <div class="support-caption">
-              <p class="mb-40">Start a family in your beautiful well-constructed house with a list of services by us.
-                We aim to build a warm comfortable home using user friendly innovative building technologies.
-              </p>
+          </div>
+
+          <div class="col-xl-4 col-lg-6 col-md-10">
+            <div class="right-caption">
+              <div class="section-title mb-30">
+                <h2>THE PERFECT HOME TO START A FAMILY</h2>
+              </div>
+              <div class="support-caption">
+                <p class="mb-40">Start a family in your beautiful well-constructed house with a list of services by us.
+                  We aim to build a warm comfortable home using user friendly innovative building technologies.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+</section>
+
+<section id="about" class="mb_parallax_container " id="mb_parallax_one">
+  <div class="mb_parallax_overlay">
+    <br>
+    <div class="text-center">
+      <h1 class="back-text ">
+        about us
+      </h1>
+    </div>
+
+    <br>
+
+    <div class="mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md pr-0">
+            <div class="safe-caption pt-10 mb-40">
+              <h2>Our Company</h2>
+              <p class="safe-pera-one">We are a construction and projects company, aiming to bring nothing but quality
+                house, well satisfying project results.
+                We are not just limited to construction only, but a variety of services as listed below:</p>
+                <a class="btn btn-outline-light btn-lg m-2" href="https://mdbootstrap.com/docs/angular/" target="_blank"
+                role="button">OUR SERVICES</a>
+            </div>
+          </div>
+          <div class="col-xl-5 offset-xl-1 col-lg-6 pl-0">
+            <div class="safe-caption-right">
+              <div class="safe-img">
+                <img src="../../assets/images/about-img.jpg" alt="" width="100%" height="500px">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
 </section>
 
 <section id="services">
-  <h1>Services</h1>
+  <span class="back-text">Services</span>
+
 </section>
 
 <section id="contact">
