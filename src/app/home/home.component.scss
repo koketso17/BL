@@ -10,6 +10,25 @@
               height: 90vh;
               background-image: url('../../assets/images/jumbo-1.jpg');
           }
+
+          .safe-caption h2 {
+              color: white;
+              font-size: 50px;
+              font-weight: 900;
+              line-height: 1.3;
+              margin-bottom: 55px;
+          }
+
+          .safe-pera-one {
+              color: white;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 1.5;
+              margin-bottom: 36px;
+              font-size: 18px;
+              padding-right: 76px;
+
+          }
       }
 
       .mb_parallax_container {
@@ -85,6 +104,32 @@
           .intro-type-animation {
               font-size: 35px;
           }
+
+          .safe-caption h2 {
+              color: white;
+              font-size: 50px;
+              font-weight: 900;
+              line-height: 1.3;
+              margin-bottom: 55px;
+          }
+
+          .safe-pera-one {
+              font-family: "Raleway", sans-serif;
+              font-size: 18px;
+              font-weight: 400;
+              color: white;
+              line-height: 1.8
+          }
+
+          .service-btn {
+              position: relative;
+              left: 100px;
+          }
+
+          .safe-caption-right {
+              position: relative;
+              top: 20px;
+          }
       }
 
       .back-text {
@@ -95,20 +140,6 @@
           -webkit-text-fill-color: transparent;
       }
 
-      .safe-caption h2 {
-          color: white;
-          font-size: 50px;
-          font-weight: 900;
-          line-height: 1.3;
-          margin-bottom: 55px;
-      }
-
-      .safe-pera-one {
-          color: white;
-          font-size: 18px;
-          font-weight: 500;
-          line-height: 1.5;
-          margin-bottom: 36px;
-          font-size: 18px;
-          padding-right: 76px;
+      .text-resett{
+        color: #fe7709;
       }

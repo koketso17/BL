@@ -1,101 +1,207 @@
-<app-navbar></app-navbar>
+<section id="start">
+  <app-navbar></app-navbar>
 
-<section id="home" class="mb-5">
+  <section id="home" class="mb-5">
+    <header>
+      <!-- Background image -->
+      <div id="intro-example" class="p-5 text-center bg-image">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="project-cap">
+              <h1 class="tw intro-type-animation mb-5"></h1>
 
-  <header>
-    <!-- Background image -->
-    <div id="intro-example" class="p-5 text-center bg-image">
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
-        <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="project-cap">
-            <h1 class="tw intro-type-animation mb-5"></h1>
- 
-            <a class="btn btn-outline-light btn-lg m-2" target="_blank"
-              role="button">Request a quote now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Background image -->
-  </header>
-
-  <br>
-  <br>
-
-  <div class="container">
-    <div class="support-company-area section-padding40">
-      <div class="container">
-        <div class="row align-items-end justify-content-between">
-          <div class="col-xl-7 col-lg-7 col-md-10">
-            <div>
-              <img class="support-location" src="../../assets/images/about.png.webp" alt="">
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-6 col-md-10">
-            <div class="right-caption">
-              <div class="section-title mb-30">
-                <h2>THE PERFECT HOME TO START A FAMILY</h2>
-              </div>
-              <div class="support-caption">
-                <p class="mb-40">Start a family in your beautiful well-constructed house with a list of services by us.
-                  We aim to build a warm comfortable home using user friendly innovative building technologies.
-                </p>
-              </div>
+              <a (click)="toHome()" class="btn btn-outline-light btn-lg m-2 animate__animated animate__bounce"
+                role="button">Request a quote now</a>
             </div>
           </div>
         </div>
       </div>
+      <!-- Background image -->
+    </header>
+
+    <br>
+    <br>
+
+    <div class="container">
+      <div class="support-company-area section-padding40">
+        <div class="container">
+          <div class="row align-items-end justify-content-between">
+            <div class="col-xl-7 col-lg-7 col-md-10">
+              <div>
+                <img class="support-location" src="../../assets/images/about.png.webp" alt="">
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 col-md-10">
+              <div class="right-caption">
+                <div class="section-title mb-30">
+                  <h2>THE PERFECT HOME TO START A FAMILY</h2>
+                </div>
+                <div class="support-caption">
+                  <p class="mb-40">Start a family in your beautiful well-constructed house with a list of services by
+                    us.
+                    We aim to build a warm comfortable home using user friendly innovative building technologies.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+  </section>
+
+  <section id="about">
+    <div class="mb_parallax_container " id="mb_parallax_one">
+      <div class="mb_parallax_overlay">
+        <br>
+        <div class="text-center">
+          <h1 class="back-text ">
+            about us
+          </h1>
+        </div>
+
+        <br>
+
+        <div class="mb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md pr-0">
+                <div class="safe-caption pt-10 mb-40">
+                  <h2>Our Company</h2>
+                  <p class="safe-pera-one ">We are a construction and projects company, aiming to bring nothing but
+                    quality
+                    house, well satisfying project results.
+                    We are not just limited to construction only, but a variety of services as listed below:</p>
+                  <a class="btn btn-outline-light btn-lg m-2 service-btn" href="https://mdbootstrap.com/docs/angular/"
+                    target="_blank" role="button">OUR SERVICES</a>
+                </div>
+              </div>
+              <div class="col-xl-5 offset-xl-1 col-lg-6 pl-0">
+                <div class="safe-caption-right">
+                  <div class="safe-img">
+                    <img src="../../assets/images/about-img.jpg" alt="" width="100%" height="500px">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="services">
+    <h1>Services</h1>
+
+  </section>
+
+  <section id="contact">
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-resett" >
+        <i class="fab fa-facebook-f" ></i>
+      </a>
+      <a href="" class="me-4 text-resett">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-resett">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-resett">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-resett" >
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <a [routerLink]="['/home']">
+            <img src="../../../assets/images/logo-2.png" alt="Image" class="img-fluid" width="300px">
+          </a>
+          <p class="text-center">
+            
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-resett">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">About</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Services</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Contact</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-resett">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3 text-resett"></i> 20205 Matumeng Sec, Bapo 2, Rustenburg, 0337</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-resett"></i>
+            blmconandproj@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-resett"></i> + 27 63 719 6928</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="">Hydra Electronics</a>
   </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+  </section>
 
-</section>
-
-<section id="about" class="mb_parallax_container " id="mb_parallax_one">
-  <div class="mb_parallax_overlay">
-    <br>
-    <div class="text-center">
-      <h1 class="back-text ">
-        about us
-      </h1>
-    </div>
-
-    <br>
-
-    <div class="mb-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md pr-0">
-            <div class="safe-caption pt-10 mb-40">
-              <h2>Our Company</h2>
-              <p class="safe-pera-one">We are a construction and projects company, aiming to bring nothing but quality
-                house, well satisfying project results.
-                We are not just limited to construction only, but a variety of services as listed below:</p>
-              <a class="btn btn-outline-light btn-lg m-2" href="https://mdbootstrap.com/docs/angular/" target="_blank"
-                role="button">OUR SERVICES</a>
-            </div>
-          </div>
-          <div class="col-xl-5 offset-xl-1 col-lg-6 pl-0">
-            <div class="safe-caption-right">
-              <div class="safe-img">
-                <img src="../../assets/images/about-img.jpg" alt="" width="100%" height="500px">
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <br>
-  </div>
-</section>
-
-<section id="services">
-  <span class="back-text">Services</span>
-
-</section>
-
-<section id="contact">
-  <h1>Contact</h1>
 </section>

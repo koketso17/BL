@@ -10,6 +10,12 @@
           }
       }
 
-      .active {
-          background-color: #fe7709;
-      }
+    .nav-link {
+        color:  #fe7709;
+        cursor: default;
+    }
+
+    .nav-item>a:hover {
+        color: white;
+        background-color: #fe7709;
+    }

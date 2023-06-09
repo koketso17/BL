@@ -7,21 +7,24 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  constructor() { }
 
-  toHome(){
-    document.getElementById("home").scrollIntoView({behavior:"smooth"})
+  ngOnInit(): void { }
+
+  toStart() {
+    document.getElementById("start").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
   }
 
-  toAbout(){
-    document.getElementById("about").scrollIntoView({behavior:"smooth"})
+  toAbout() {
+    document.getElementById("about").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
   }
 
-  toServices(){
-    document.getElementById("services").scrollIntoView({behavior:"smooth"})
+  toServices() {
+    document.getElementById("services").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
   }
 
-  toContact(){
-    document.getElementById("contact").scrollIntoView({behavior:"smooth"})
+  toContact() {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
   }
 
 }

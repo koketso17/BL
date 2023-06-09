@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import Typewriter from 't-writer.js'
 
 @Component({
@@ -30,6 +30,13 @@ export class HomeComponent {
         "THE PERFECT HOME TO START A FAMILY.",
       )
       .start()
+  }
+
+
+  toHome() {
+    document.getElementById("home").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+
+    this.ngOnInit()
   }
 
 
