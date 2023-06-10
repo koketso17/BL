@@ -75,6 +75,8 @@
                     house, well satisfying project results.
                     We are not just limited to construction only, but a variety of services as listed below:</p>
                 </div>
+                <a (click)="toServices()" class="btn btn-outline-light btn-lg m-2 animate__animated animate__bounce service-btn"
+                role="button">Our Services</a>
               </div>
               <div class="col-xl-5 offset-xl-1 col-lg-6 pl-0">
                 <div class="safe-caption-right">
@@ -105,93 +107,98 @@
 
       <div class="service">
         <div class="service-image">
-          <img src="../../assets/images/demolish.png" width="50px" alt="Service 1">
+          <div class="round-icon">
+            <img src="../../assets/images/icons/demolitions.png" width="50%" alt="Service 2">
+          </div>
         </div>
         <div class="service-content">
           <h2>DEMOLISHING</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae augue id lectus molestie commodo. Sed
-            eget diam eu sem euismod iaculis vitae vel arcu. Ut congue pretium vestibulum.</p>
+          <p>Information to be added.</p>
         </div>
       </div>
 
       <div class="service">
         <div class="service-image">
-          <img src="service2.jpg" alt="Service 2">
+          <div class="round-icon">
+            <img src="../../assets/images/icons/construction-plan.png" width="50%" alt="Service 2">
+          </div>
         </div>
         <div class="service-content">
           <h2>REMODELLING</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae augue id lectus molestie commodo. Sed
-            eget diam eu sem euismod iaculis vitae vel arcu. Ut congue pretium vestibulum.</p>
+          <p>Information to be added.</p>
         </div>
       </div>
 
       <div class="service">
         <div class="service-image">
-          <img src="service3.jpg" alt="Service 3">
+          <div class="round-icon">
+            <img src="../../assets/images/icons/paintbrush.png" width="50%" alt="Service 2">
+          </div>
         </div>
         <div class="service-content">
           <h2>PAINTING</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae augue id lectus molestie commodo. Sed
-            eget diam eu sem euismod iaculis vitae vel arcu. Ut congue pretium vestibulum.</p>
+          <p>Information to be added.</p>
         </div>
       </div>
 
       <div class="service">
         <div class="service-image">
-          <img src="service3.jpg" alt="Service 3">
+          <div class="round-icon">
+            <img src="../../assets/images/icons/vehicle.png" width="70%" alt="Service 2">
+          </div>
         </div>
         <div class="service-content">
           <h2>BRICK LAYING</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae augue id lectus molestie commodo. Sed
-            eget diam eu sem euismod iaculis vitae vel arcu. Ut congue pretium vestibulum.</p>
+          <p>Information to be added.</p>
         </div>
       </div>
 
       <div class="service">
         <div class="service-image">
-          <img src="service3.jpg" alt="Service 3">
+          <div class="round-icon">
+            <img src="../../assets/images/icons/hook.png" width="50%" alt="Service 2">
+          </div>
         </div>
         <div class="service-content">
           <h2>CONSTRUCTION BUILDING</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae augue id lectus molestie commodo. Sed
-            eget diam eu sem euismod iaculis vitae vel arcu. Ut congue pretium vestibulum.</p>
+          <p>Information to be added.</p>
         </div>
       </div>
 
       <div class="service">
         <div class="service-image">
-          <img src="service3.jpg" alt="Service 3">
+          <div class="round-icon">
+            <img src="../../assets/images/icons/lawn-mower.png" width="50%" alt="Service 2">
+          </div>
         </div>
         <div class="service-content">
           <h2>LAWN MAWING</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae augue id lectus molestie commodo. Sed
-            eget diam eu sem euismod iaculis vitae vel arcu. Ut congue pretium vestibulum.</p>
+          <p>Information to be added.</p>
         </div>
       </div>
 
       <div class="service">
         <div class="service-image">
-          <img src="service3.jpg" alt="Service 3">
+          <div class="round-icon">
+            <img src="../../assets/images/icons/construction-plan.png" width="50%" alt="Service 2">
+          </div>
         </div>
         <div class="service-content">
           <h2>MAINTANANCE</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae augue id lectus molestie commodo. Sed
-            eget diam eu sem euismod iaculis vitae vel arcu. Ut congue pretium vestibulum.</p>
+          <p>Information to be added.</p>
         </div>
       </div>
 
 
       <div class="service">
         <div class="service-image">
-          <img src="service3.jpg" alt="Service 3">
+          <div class="round-icon">
+            <img src="../../assets/images/icons/drainage.png" width="80%" alt="Service 2">
+          </div>
         </div>
         <div class="service-content">
           <h2>GUTTER REPAIRS</h2>
-          <p>The process of fixing or restoring the functionality of gutters, which are components installed along the
-            edges of a roof to collect and redirect rainwater away from the building. Gutters play a crucial role in
-            protecting the structure and foundation of a building by preventing water damage, such as leaks, basement
-            flooding, and erosion. Over time, gutters can become clogged with debris, develop leaks, or sustain damage
-            due to various factors, including weather conditions, age, or improper maintenance.</p>
+          <p>Information to be added.</p>
         </div>
       </div>
 
@@ -257,16 +264,16 @@
                 Useful links
               </h6>
               <p>
-                <a href="#!" class="text-reset">Home</a>
+                <a (click)="toStart()" class="text-reset">Home</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">About</a>
+                <a (click)="toAbout()" class="text-reset">About</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Services</a>
+                <a (click)="toServices()" class="text-reset">Services</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Contact</a>
+                <a (click)="toContact()" class="text-reset">Contact</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -294,7 +301,7 @@
       <!-- Copyright -->
       <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
         © 2023 Copyright:
-        <a class="text-reset fw-bold" href="">Hydra Electronics</a>
+        <a class="text-reset fw-bold" href="#!">Hydra Electronics</a>
       </div>
       <!-- Copyright -->
     </footer>

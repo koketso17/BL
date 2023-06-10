@@ -39,6 +39,20 @@ export class HomeComponent {
     this.ngOnInit()
   }
 
+  toStart() {
+    document.getElementById("start").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+  }
 
+  toAbout() {
+    document.getElementById("about").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+  }
+
+  toServices() {
+    document.getElementById("services").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+  }
+
+  toContact() {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+  }
 
 }
