@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import {AppRoutingModule} from './app-routing.module'
+
+
 
 // MDB Modules
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
@@ -21,6 +23,7 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';  
 
 //Pages
 import { HomeComponent } from './home/home.component';
@@ -55,6 +58,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MdbTooltipModule,
     MdbValidationModule,
     AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     
   ],
   providers: [],

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import Typewriter from 't-writer.js'
+import { FormBuilder, FormGroup, FormControl, Validators} from '@angular/forms';
+import {ContactService} from '../services/contact.service'
 
 @Component({
   selector: 'app-home',
@@ -8,7 +10,16 @@ import Typewriter from 't-writer.js'
 })
 export class HomeComponent {
 
-  constructor() { }
+  FormData: FormGroup;
+  constructor(private builder: FormBuilder, private contact: ContactService) { 
+
+  this.FormData = this.builder.group({
+  Fullname: new FormControl('', [Validators.required]),
+  Email: new FormControl('', [Validators.compose([Validators.required, Validators.email])]),
+  Comment: new FormControl('', [Validators.required])
+  })
+
+  }
 
   ngOnInit(): void {
 
@@ -31,6 +42,17 @@ export class HomeComponent {
       )
       .start()
   }
+
+  onSubmit(FormData) {
+    console.log(FormData)
+    this.contact.PostMessage(FormData)
+    .subscribe(response => {
+    console.log(response)
+    }, error => {
+    console.warn(error.responseText)
+    console.log({ error })
+    })
+    }
 
 
   toHome() {
